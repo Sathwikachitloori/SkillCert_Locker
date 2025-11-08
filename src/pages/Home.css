@@ -1,0 +1,154 @@
+
+
+.home {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: #fff;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: #fff;
+  padding: 70px 20px;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin: 10px auto 20px;
+  max-width: 700px;
+}
+.cta {
+  background: #fff;
+  color: #007bff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.cta:hover {
+  background: #f5f5f5;
+}
+
+/* SECTION STYLING */
+.section {
+  padding: 60px 30px;
+}
+.section h2 {
+  font-size: 1.9rem;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+/* GRID LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.card h3 {
+  font-size: 1.2rem;
+  color: #111;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* SEARCH BAR */
+.explore .search {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  width: 60%;
+  max-width: 500px;
+  transition: 0.3s ease;
+}
+.explore .search:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* INSTITUTIONS */
+.institutions .logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.institutions img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* TESTIMONIALS */
+.testimonials .testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.t-card {
+  background: #f9f9f9;
+  border-left: 5px solid #007bff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.t-card p {
+  font-style: italic;
+  color: #333;
+}
+.t-card h4 {
+  margin-top: 12px;
+  color: #007bff;
+}
+
+/* NEWSLETTER */
+.newsletter input {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 280px;
+  margin: 10px;
+}
+.newsletter button {
+  margin-left: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #f2f2f2;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
