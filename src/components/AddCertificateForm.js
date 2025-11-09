@@ -36,7 +36,7 @@ function AddCertificateForm({ onAdd }) {
     else if (prof.includes("cloud")) setSuggestions(famousByProfession.cloud);
     else if (prof.includes("dev") || prof.includes("developer") || prof.includes("software")) setSuggestions(famousByProfession.developer);
     else setSuggestions(famousByProfession.default);
-  }, []);
+  }, [user]);
 
   const handleFile = (e) => {
     const f = e.target.files[0];

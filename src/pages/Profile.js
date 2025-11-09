@@ -6,7 +6,7 @@ export default function Profile() {
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("profile")) || JSON.parse(localStorage.getItem("user")) || profile;
     setProfile(saved);
-  }, []);
+  }, [profile]);
 
   useEffect(() => {
     // keep localStorage user in sync
