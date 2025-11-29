@@ -37,12 +37,24 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // ---------------- EXTRA VALIDATIONS ADDED ----------------
+
+    // 1. Email must contain '@'
+    if (!user.email.includes("@")) {
+      setMessage("⚠ Please enter a valid email containing '@'");
+      return;
+    }
+
+   
+
+    // ---------------- END OF ADDED VALIDATIONS ----------------
+
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
     // Check for duplicate email
     const existingUser = users.find((u) => u.email === user.email);
     if (existingUser) {
-      setMessage("⚠️ Email already registered! Try logging in.");
+      setMessage("⚠ Email already registered! Try logging in.");
       return;
     }
 
@@ -109,7 +121,7 @@ const Register = () => {
         {message && (
           <p
             className={`text-center mt-3 font-medium ${
-              message.startsWith("⚠️") ? "text-red-500" : "text-green-600"
+              message.startsWith("⚠") ? "text-red-500" : "text-green-600"
             }`}
           >
             {message}

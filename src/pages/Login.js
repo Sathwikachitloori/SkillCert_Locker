@@ -12,6 +12,13 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // -------------------------
+    // ADDED VALIDATIONS
+    // -------------------------
+
+  
+
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
     const foundUser = users.find(
@@ -21,7 +28,7 @@ const Login = () => {
     if (foundUser) {
       alert("✅ Login successful!");
       localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
-      navigate("/home"); // ✅ fixed line
+      navigate("/home");
     } else {
       alert("❌ Invalid email or password. Please try again.");
     }
@@ -31,6 +38,7 @@ const Login = () => {
     <div className="auth-container">
       <div className="auth-box">
         <h2>Welcome Back</h2>
+
         <form onSubmit={handleSubmit}>
           <input
             type="email"
