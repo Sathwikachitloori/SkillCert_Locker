@@ -1,0 +1,18 @@
+{
+  "certs": [
+    {
+      "id": "e4d5",
+      "name": "Sample",
+      "organization": "Test Org",
+      "date": "2025-11-29",
+      "verified": true
+    },
+    {
+      "id": 1,
+      "name": "Fixed ID",
+      "organization": "You",
+      "date": "2025-11-29",
+      "verified": false
+    }
+  ]
+}
