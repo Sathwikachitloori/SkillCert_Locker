@@ -2,17 +2,35 @@
   "certs": [
     {
       "id": "e4d5",
-      "name": "Sample",
+      "name": "Sample Certificate",
       "organization": "Test Org",
+      "userId": "u1",
       "date": "2025-11-29",
-      "verified": true
+      "verified": true,
+      "description": "Completion of the JavaScript basics course",
+      "tags": ["javascript", "basics"]
     },
     {
-      "id": 1,
-      "name": "Fixed ID",
+      "id": "1",
+      "name": "Fixed ID Certificate",
       "organization": "You",
+      "userId": "u2",
       "date": "2025-11-29",
-      "verified": false
+      "verified": false,
+      "description": "Internal test certificate",
+      "tags": ["internal"]
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": "u2",
+      "name": "Jane Smith",
+      "email": "jane@example.com"
     }
   ]
 }
